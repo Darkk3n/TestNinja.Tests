@@ -31,5 +31,13 @@ namespace TestNinja.UnitTests
          var res = math.Max(a, b);
          Assert.That(res, Is.EqualTo(expected));
       }
+
+      [Test]
+      public void GetOddNumbers_LimitIsGreaterThanZero_ReturnOddNumbersUpToLimit()
+      {
+         var res = math.GetOddNumbers(5);
+         Assert.That(res,Is.Not.Empty);
+
+      }
    }
 }
